@@ -1,0 +1,39 @@
+// HAMBURGER
+@media screen and (min-width: 1441px)
+    .navigation
+        &_checkbox:checked ~ &_background
+            transform: scale(45.5)
+
+
+@media screen and (max-width: 425px)
+    .navigation
+        &_list
+            position: absolute
+            left: 50%
+            top: 299px
+        &_item
+            padding: 30px
+            margin: 40px
+
+        &_checkbox:checked ~ &_background
+            &_checkbox
+                left: 100px
+            &_button
+            transform: scale(55.5)
+
+// HAMBURGER ENDS
+
+
+// MAIN TITLE
+@media screen and (max-width: 1092px)
+    .header-main
+        font-size: 50px
+
+// MAIN TITLE
+@media screen and (max-width: 425px)
+    .landingpage
+        display: flex
+        flex-direction: row
+        height: 100%
+        .who
+            width: 100%

@@ -1,0 +1,58 @@
+@import 'mixings.sass'
+
+*
+  padding: 0
+  margin: 0
+  
+.landingpage
+  display: flex
+  flex-direction: row
+  height: 100%
+  .who
+    display: flex
+    flex-direction: column
+    border: 2px solid green
+    width: 50vw
+  .header-sub
+    display: flex
+    flex-direction: column
+    border: 2px solid blue
+    justify-content: center
+    height: 45vh
+    &-item
+      &-first
+      &-second
+      &-third
+
+
+
+.links
+  display: flex
+  justify-content: space-around
+  padding: 5px
+  &-items
+    width: 20%
+    height: 20%
+    border-radius: 50%
+    padding: 0px
+    box-shadow: 10px 10px 30px -3px rgba(0,0,0,0.15)
+
+
+.header-main
+  display: flex
+  justify-content: center
+  padding: 30px 
+  font-size: 90px
+  border-radius: 5px
+  background-color: red
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  @include slick-slide
+
+
+.topchunk
+  background-color: black
+  width: 100%
+  height: 5vh
+
+
+

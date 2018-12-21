@@ -1,0 +1,90 @@
+@import 'mixings.sass'
+
+.navigation
+    &_header
+        font-size: 20px
+        font-weight: 200
+        padding: 25px
+        transition: all .3s ease-out
+        text-shadow: 10px 10px 30px rgba(150, 150, 150, 1)
+        &:hover
+            font-size: 25px
+    &_checkbox
+        display: none
+    &_button
+        height: 2rem
+        width: 2rem
+        border-radius: 50%
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,242,241,1) 18%, rgba(255,242,241,1) 22%)
+        position: fixed
+        right: 5vw
+        top: 10vh
+        z-index: 200
+        box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1)
+
+    &_background
+        height: 2rem
+        width: 2rem
+        border-radius: 50%
+        position: fixed
+        right: 5vw
+        top: 10vh
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,241,255,1) 9%, rgba(241,241,255,1) 18%)
+        z-index: 100
+
+        transition: transform .5s
+
+        // transform: scale(15)
+
+    &_nav
+        height: 100vh
+        z-index: 150
+        opacity: 0
+        width: 0
+        transition: all .15s
+
+
+    &_list
+        perspective: 150rem
+        position: fixed
+        top: 40%
+        left: 87%
+        transform: translate(-50%, -50%)
+        z-index: 200
+    &_item
+        display: inline-block
+        padding: 15%
+        margin: 15%
+        text-transform: uppercase
+        font-size: 20px
+        background-size: 240%
+        background-image: linear-gradient(120deg,white 0%, white 50%, #f0f0ff 50%)
+        perspective: 140rem
+        transition: all .3s ease-out
+        border-radius: 4%
+
+        &:hover
+            background-position: 100%
+            color: white
+            background-color: black
+            box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.2)
+
+    &_link
+        
+        text-transform: uppercase
+        font-size: 20px
+        
+        
+
+    &_checkbox:checked ~ &_background
+        transform: scale(25.5)
+
+
+    &_checkbox:checked ~ &_nav
+        opacity: 1
+        width: 100%
+
+
+
+.flex-navbar-hamburger-container
+    border: 1px solid black

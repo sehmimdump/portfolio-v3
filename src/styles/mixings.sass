@@ -1,0 +1,16 @@
+@mixin hovering-nav
+    transition: all .3s ease-out
+    &:hover
+        text-shadow: 10px 10px 30px rgba(150, 150, 150, .5)
+        transform: rotate(-90deg)
+        background-color: white
+@mixin slick-slide
+    background-size: 250%
+    background-image: linear-gradient(120deg,white 0%, white 50%, #f0f0ff 50%)
+    perspective: 140rem
+    transition: all .3s ease-out
+    &:hover
+        background-size: 100%
+        box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.2)
+
+
