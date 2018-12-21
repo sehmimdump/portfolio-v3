@@ -64,7 +64,9 @@ class LandingPage extends Component {
             </div>
         </div>
         
-        
+      <div className="picture" >
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png" className="picture-img" ></img>
+      </div>  
 
       </div>
     );

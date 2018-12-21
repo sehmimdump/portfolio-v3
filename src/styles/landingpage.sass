@@ -7,7 +7,7 @@
 .landingpage
   display: flex
   flex-direction: row
-  height: 100%
+  flex-flow: row nowrap
   .who
     display: flex
     flex-direction: column
@@ -47,6 +47,13 @@
   background-color: red
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   @include slick-slide
+
+.picture
+  display: flex
+  justify-content: center
+  width: 50vw
+  &-img
+    width: 65%
 
 
 .topchunk
