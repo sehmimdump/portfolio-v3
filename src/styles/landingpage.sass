@@ -1,5 +1,5 @@
 @import 'mixings.sass'
-
+@import url('https://fonts.googleapis.com/css?family=Cookie|Lobster+Two|Sacramento|Tangerine|Asap|Great+Vibes')
 *
   padding: 0
   margin: 0
@@ -11,12 +11,11 @@
   .who
     display: flex
     flex-direction: column
-    border: 2px solid green
     width: 50vw
   .header-sub
     display: flex
     flex-direction: column
-    border: 2px solid blue
+    margin-left: 20px
     justify-content: center
     height: 45vh
     &-item
@@ -36,15 +35,15 @@
     border-radius: 50%
     padding: 0px
     box-shadow: 10px 10px 30px -3px rgba(0,0,0,0.15)
-
+    @include hovering-nav
 
 .header-main
+  font-family: 'Times New Roman', Times, serif
   display: flex
   justify-content: center
   padding: 30px 
   font-size: 90px
   border-radius: 5px
-  background-color: red
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   @include slick-slide
 
@@ -53,7 +52,8 @@
   justify-content: center
   width: 50vw
   &-img
-    width: 65%
+    width: 100%
+    height: 100%
 
 
 .topchunk

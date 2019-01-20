@@ -5,12 +5,58 @@
         transform: rotate(-90deg)
         background-color: white
 @mixin slick-slide
-    background-size: 250%
+    background-size: 220%
     background-image: linear-gradient(120deg,white 0%, white 50%, #f0f0ff 50%)
     perspective: 140rem
     transition: all .3s ease-out
     &:hover
-        background-size: 100%
+        background-size: 100% auto
         box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.2)
+        border: .3px solid black
+
+
+@mixin hover-effect-logo
+    color: black
+    text-shadow: 2px 2px 10px rgba(150, 150, 150, .2)
+    padding: 10px 0px
+    transition: all .5s ease-out
+    perspective: 140rem
+    transform: rotateX(20deg)
+    &:hover
+        text-shadow: 10px 10px 30px rgba(150, 150, 150, 1)
+        transform: rotateX(0deg)
+        color:  rgba(255,0,132,.8)
+
+
+@mixin header-effect
+    perspective: 140rem
+
+    font-size: 3rem
+    transition: all 0.3s ease-in-out
+    &:hover
+        text-shadow: 10px 10px 30px rgba(150, 150, 150, 1)
+        color:  rgba(255,0,132,.8)
+        transform: rotateX(20deg)
+
+@mixin hovering-nav
+    transition: all .3s ease-out
+    &:hover
+        text-shadow: 10px 10px 30px rgba(150, 150, 150, .5)
+        transform: rotate(-90deg)
+        background-color: white
+// @mixin slick-water ($container, $inner )
+//     $container 
+//         perspective: 25px
+
+//     $inner 
+//         width: 20em
+//         height: 18em
+//         background-color: white
+//         box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2)
+//         transition: transform 0.5s
+//         -webkit-transition: transform 0.5s
+//         -moz-transition: transform 0.5s
+//         -o-transition: transform 0.5s
+
 
 
