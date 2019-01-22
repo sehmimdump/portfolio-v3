@@ -19,24 +19,42 @@ class LandingPage extends Component {
       ]
     return (
       <div className="landingpage">
+        {/* NAME */}
+          <div>
+            <h1 className="header-main" >
+              Sehmim Al
+            </h1>
+          </div>
+        {/* IMAGE */}
+        <div className="circle-div">
+          <img src="https://i.imgur.com/8zzmf4y.jpg" class="circle"></img>
+        </div>
 
+        <div class="qualities">
+          ♦<a href="#projects"> ♦ Web Developer ♦</a>
+          <a href="#projects"> ♦ Artsy Guy ♦</a>
+          <a href="#projects"> ♦ Musician ♦</a>♦</div>
+                
+        <div class="qualities-sub">Please, do have a look around</div>
         <div className="who" >
-            {/* ONE */}
-            <h1  className="header-main"> WHO AM I ?</h1>
-            {/* TOW */}
-            <div className="header-sub">
-              <h1 className="header-sub-item-first"> ↳ SUB TITLE </h1>
-              <h1 className="header-sub-item-second"> ↳ {'     '} SUB TITLE </h1>
-              <h1 className="header-sub-item-third"> ↳ SUB TITLE </h1>
-            </div>
             {/* THREE */}
             <div className="links" >
-              <img className="links-items" src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo-by-vexels.png" ></img>
-              <img className="links-items" src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo-by-vexels.png" ></img>
-              <img className="links-items" src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo-by-vexels.png" ></img>              
+              <a href="https://www.linkedin.com/in/sehmim-haque/">
+                <img className="links-items" src="https://grytics.com/wp-content/uploads/2015/01/1414386638_linkedin_circle_color-512.png" ></img>
+              </a>
+              <a href="https://github.com/sehmim">
+                <img className="links-items" src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" ></img>
+              </a>
+              <a href="https://stackoverflow.com/users/9531113/sehmim-al-haque">
+                <img className="links-items" src="https://streamdata.io/wp-content/uploads/2018/04/stack-overflow-orange.png" ></img>
+              </a>
             </div>
+        </div>
 
-            {/* HAMBURGER */}
+
+
+        {/* HAMBURGER */}
+
         <div className="flex-navbar-hamburger-container">
               <div className="navigation" >
                 <input type="checkbox" className="navigation_checkbox" id="nav_toggle"></input>
@@ -62,12 +80,6 @@ class LandingPage extends Component {
               </div> 
             
             </div>
-        </div>
-        
-      <div className="picture" >
-          {/* <img src="https://i.imgur.com/nJjdX1F.jpg" className="picture-img" ></img> */}
-      </div>  
-
       </div>
     );
   }

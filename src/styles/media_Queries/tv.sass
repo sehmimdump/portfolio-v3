@@ -5,7 +5,7 @@
             transform: scale(45.5)
 
 
-@media screen and (max-width: 425px)
+@media screen and (max-width: 525px)
     .navigation
         &_list
             position: absolute
@@ -25,19 +25,31 @@
 
 
 // MAIN TITLE
-@media screen and (max-width: 1092px)
+@media screen and (min-width: 1445px)
+    .circle
+        width: 400px
     .header-main
-        font-size: 50px
+        font-size: 200px
+        padding: 0
+    .qualities
+        font-size: 40px
+        padding: 40px
+    .qualities-sub
+        font-size: 40px
+    .links-items
+        width: 100px
+        height: 100px
 
 // MAIN TITLE
-@media screen and (max-width: 425px)
-    .picture
-        &-img
-        width: 0
-        height: 0
-    .landingpage
-        display: flex
-        flex-direction: row
-        height: 100%
-        .who
-            width: 100%
+@media screen and (max-width: 525px)
+    .circle
+        width: 100px
+    .header-main
+        font-size: 80px
+    .qualities
+        font-size: 0px
+    .links-items
+        width: 50px
+        height: 50px
+
+

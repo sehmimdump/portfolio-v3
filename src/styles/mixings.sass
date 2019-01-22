@@ -1,12 +1,6 @@
-@mixin hovering-nav
-    transition: all .3s ease-out
-    &:hover
-        text-shadow: 10px 10px 30px rgba(150, 150, 150, .5)
-        transform: rotate(-90deg)
-        background-color: white
 @mixin slick-slide
     background-size: 220%
-    background-image: linear-gradient(120deg,white 0%, white 50%, #f0f0ff 50%)
+    background-image: linear-gradient(120deg,rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.1) 50%)
     perspective: 140rem
     transition: all .3s ease-out
     &:hover
@@ -42,21 +36,8 @@
     transition: all .3s ease-out
     &:hover
         text-shadow: 10px 10px 30px rgba(150, 150, 150, .5)
-        transform: rotate(-90deg)
-        background-color: white
-// @mixin slick-water ($container, $inner )
-//     $container 
-//         perspective: 25px
+        transform: scale(1.2)
 
-//     $inner 
-//         width: 20em
-//         height: 18em
-//         background-color: white
-//         box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2)
-//         transition: transform 0.5s
-//         -webkit-transition: transform 0.5s
-//         -moz-transition: transform 0.5s
-//         -o-transition: transform 0.5s
 
 
 
