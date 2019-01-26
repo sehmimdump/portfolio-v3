@@ -47,7 +47,7 @@ li
   justify-content: center
   font-family: Cookie
   letter-spacing: 3.5px
-  @include hovering-nav
+  @include header-effect
 
 .circle-div
   display: flex
@@ -71,6 +71,11 @@ li
   letter-spacing: 2px
   font-family: Great Vibes
   padding: 10px
+
+.qualities-each
+  transition: all .3s ease-out
+  &:hover
+    color: (rgba(200,80,50,.99))
 
 .qualities-sub
   text-align: center

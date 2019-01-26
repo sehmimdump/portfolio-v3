@@ -1,0 +1,78 @@
+@import 'mixings.sass'
+@import url('https://fonts.googleapis.com/css?family=Cookie|Lobster+Two|Sacramento|Tangerine|Asap|Great+Vibes')
+
+.SecondPage
+    &-main
+        height: 116.5vh
+        background-image: url('../sehmim.jpg')
+        background-size: 100vw
+.SecondPage-Body
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 29, 0.6), rgba(0, 0, 0, .8))
+    background-position: center
+    background-repeat: no-repeat
+    height: 96.5vh
+
+.Header-main
+
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 29, 0.6), rgba(0, 0, 0, 0.7))
+    font-size: 100px
+    font-family: Cookie
+    font-weight: 400
+    padding: 10px
+    text-align: center
+    letter-spacing: 15px
+
+.card
+    display: flex
+    flex-wrap: wrap
+    perspective: 100rem
+    justify-content: center
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 29, 0.6), rgba(0, 0, 0, 0.7))
+
+
+    &_side
+        padding: 0px
+        display: flex
+        justify-content: space-between
+        transition: all 1s ease
+        &--front
+            opacity: 1
+        &--back
+            padding: 50px 20px 20px 20px
+            margin: 0px 0px 0px 0px
+            border-radius: 10px
+            font-size: 50px
+            position: absolute
+            opacity: 0
+            font-family: Tangerine
+            font-weight: 400
+            text-align: center
+            letter-spacing: 15px
+            transform: rotateX(180deg)
+
+    &:hover &_side--front
+        transform: rotateX(180deg)
+        opacity: 0
+    &:hover &_side--back
+        transform: rotateX(0deg)
+        opacity: 1
+
+
+
+    &-img
+        padding: 60px
+        height: 250px
+        width: 600px
+
+
+.header-item
+    padding: 0px
+    margin: 0px
+
+
+
+
+
+
+
+

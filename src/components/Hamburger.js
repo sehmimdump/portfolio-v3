@@ -4,6 +4,7 @@ import '../styles/landingpage.sass';
 import '../styles/hamburger.sass';
 import '../styles/media_Queries/tv.sass';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 {/* HAMBURGER */}
 
@@ -14,8 +15,8 @@ export default class Hamburger extends React.Component {
 render (){
 
     const SideNavData = [
-        { title: 'EXPEREINCE' , href: 'https://www.instagram.com/' },
-        { title: 'PROJECTS' , href: 'https://www.instagram.com/' }
+        { title: 'EXPEREINCE' , href: '#' },
+        { title: 'PROJECTS' , href: '#projects' }
         ]
     return (
         <div className="flex-navbar-hamburger-container">
@@ -30,7 +31,9 @@ render (){
                 <ul className="navigation_list">
                   { SideNavData.map((item, index) => { return (
                   <li key={index} className="navigation_item">
-                    <a href={ item.href } className="navigation_link"> { item.title } </a>
+                    <AnchorLink href={ item.href }>
+                      <a href={ item.href } className="navigation_link"> { item.title } </a>
+                    </AnchorLink>
                   </li>
                   ) }) }
                 </ul>

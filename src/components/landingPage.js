@@ -7,11 +7,10 @@ import '../styles/media_Queries/tv.sass';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Hamburger from "./Hamburger";
 
-const NavData = [
-  { title: 'Menu' , href: '#menu' },
-  { title: 'Location' , href: '#location' },
-  { title: 'About Us' , href: '#about' },
-  { title: 'Reviews' , href: '#reviews' }
+const socialData = [
+  { title: 'linkedin' , href: 'https://www.linkedin.com/in/sehmim-haque/', src:'https://grytics.com/wp-content/uploads/2015/01/1414386638_linkedin_circle_color-512.png' },
+  { title: 'github' , href: 'https://github.com/sehmim', src :'https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png' },
+  { title: 'stackoverflow' , href: 'https://stackoverflow.com/users/9531113/sehmim-al-haque', src :"https://streamdata.io/wp-content/uploads/2018/04/stack-overflow-orange.png" },
 ]
 class LandingPage extends Component {
   render() {
@@ -26,29 +25,34 @@ class LandingPage extends Component {
           </div>
         {/* IMAGE */}
         <div className="circle-div">
-          <img src="https://i.imgur.com/8zzmf4y.jpg" class="circle"></img>
+          <img src="https://i.imgur.com/8zzmf4y.jpg" className="circle"></img>
         </div>
 
-        <div class="qualities">
-          <AnchorLink href="#projects" >     
-            ♦<a  href="projects" >♦ Web Developer ♦</a>
+        <div className="qualities">
+        ♦<AnchorLink className="qualities-each" href="#projects" >     
+            ♦ Web Developer ♦
           </AnchorLink> 
-          <a href="#projects"> ♦ Artsy Guy ♦</a>
-          <a href="#projects"> ♦ Musician ♦</a>♦</div>
+          <AnchorLink className="qualities-each" href="#projects" >     
+          ♦ Artsy Guy ♦
+          </AnchorLink> 
+          <AnchorLink className="qualities-each" href="#projects" >     
+          ♦ Musician ♦
+          </AnchorLink> 
+        ♦</div>
                 
-        <div class="qualities-sub">Please, do have a look around</div>
+        <div className="qualities-sub">Please, do have a look around</div>
         <div className="who" >
             {/* THREE */}
             <div className="links" >
-              <a href="https://www.linkedin.com/in/sehmim-haque/">
-                <img className="links-items" src="https://grytics.com/wp-content/uploads/2015/01/1414386638_linkedin_circle_color-512.png" ></img>
-              </a>
-              <a href="https://github.com/sehmim">
-                <img className="links-items" src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" ></img>
-              </a>
-              <a href="https://stackoverflow.com/users/9531113/sehmim-al-haque">
-                <img className="links-items" src="https://streamdata.io/wp-content/uploads/2018/04/stack-overflow-orange.png" ></img>
-              </a>
+            {
+              socialData.map( (item, index) => {
+                return (
+                  <a key={index} href={item.href} >
+                    <img className="links-items" src={item.src} ></img>
+                  </a>
+                )
+              })
+            }
             </div>
         </div>
 
