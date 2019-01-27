@@ -1,5 +1,4 @@
 .container
-    padding-top: 40px
     display: flex
     flex-wrap: wrap
     align-items: flex-start
@@ -8,13 +7,82 @@
 
 .card-body
     width: 25vw
+    cursor: pointer
 
 .card
     &-header
-        font-size: 30px
+        font-size: 100%
         text-align: center
         font-family: Asap
-
     &-img
-        width: 150px
-        height: 150px
+        padding: 10% 0px 30px 25%
+        width: 50%
+        height: 50%
+        transition: all .3s ease-out
+        &:hover
+            transform: scale(1.08)
+
+
+// Website Each
+.Project-body
+    position: absolute
+    left: 10%
+    display: flex
+    flex-direction: column
+    background: radial-gradient(ellipse at center, rgba(64, 62, 57, .7), rgba(0, 0, 0, .6))
+    width: 80vw
+    height: 80vh
+    border: 1px solid black
+.headers
+    display: flex
+    flex-direction: row
+    font-family: Asap
+    justify-content: space-between
+    font-size: 15px
+    background: rgba(0, 0, 0, .8)
+    padding: 20px
+    .header-cross
+        cursor: pointer
+
+.project-view
+    display: flex
+    flex-direction: row
+.project-Slide 
+    display: flex
+    flex-direction: column
+    width: 40vw
+    .project-Slide-each-1
+        width: 30vw
+        border: 1px solid black
+        left: 2%
+        top: 20%
+        position: absolute
+        transition: all .5s ease
+        &:hover
+            z-index: 2
+            transform: scale(1.5)
+
+    .project-Slide-each-2
+        width: 30vw
+        border: 1px solid black
+        left: 5%
+        top: 35%
+        position: absolute
+        transition: all .5s ease
+        &:hover
+            z-index: 2
+            transform: scale(1.5)
+    .project-Slide-each-3
+        width: 30vw
+        border: 1px solid black
+        left: 10%
+        top: 51%
+        position: absolute
+        transition: all .5s ease
+        &:hover
+            z-index: 2
+            transform: scale(1.5)
+.project-details
+    display: flex
+    flex-direction: column 
+    justify-content: space-around

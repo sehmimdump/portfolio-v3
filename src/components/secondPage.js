@@ -1,22 +1,12 @@
 import React, { Component } from 'react';
 import "../styles/secondPage.sass";
+import "../styles/media_Queries/tv.sass";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import MusicProjects from './projects/MusicProjects';
 import { TweenMax, TimelineLite, Power2, Elastic, CSSPlugin } from "gsap/TweenMax";
 import WebsiteProjects from './projects/WebsiteProjects';
 
 export default class SecondPage extends Component {
-constructor(){
-    super();
-    this.myElement = null;
-    this.myTween = null;
-    }
-    componentDidMount(){
-
-    // use the node ref to create the animation
-    this.myTween = TweenMax.from(this.myElement, 1, {height:0});
-
-    }
   state = {
     catagoryID : '',
     title : 'Projects'
@@ -25,14 +15,7 @@ constructor(){
   foo = (data, title) =>{
       this.setState({
           catagoryID: data,
-          title: title
       })
-  }
-  componentDidMount(){
-
-    // use the node ref to create the animation
-    this.myTween = TweenMax.from(this.myElement, 1, {height:0});
-
   }
 
   render() {
@@ -55,7 +38,7 @@ constructor(){
                 {
                     navData.map( ( item, index )=>{
                         return (
-                            <AnchorLink 
+                            <AnchorLink
                                 href="#projects" 
                                 onClick={ () => this.foo(item.id, item.title) } 
                                 key={ index } className="body-item"> 
@@ -67,7 +50,7 @@ constructor(){
             </div>
         </div>
         <div className="SecondPage-Body">
-            <div ref={div => this.myElement = div} className="projects">
+            <div className="projects">
                 {
                     this.state.catagoryID === '1' ? <MusicProjects />: null ||
                     this.state.catagoryID === '2' ? <WebsiteProjects />: null
