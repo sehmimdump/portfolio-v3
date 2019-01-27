@@ -47,16 +47,17 @@
 .project-view
     display: flex
     flex-direction: row
+    justify-content: space-between
 .project-Slide 
     display: flex
     flex-direction: column
-    width: 40vw
+    width: 50%
     .project-Slide-each-1
         width: 30vw
         border: 1px solid black
         left: 2%
         top: 20%
-        position: absolute
+        position: relative
         transition: all .5s ease
         &:hover
             z-index: 2
@@ -65,9 +66,9 @@
     .project-Slide-each-2
         width: 30vw
         border: 1px solid black
-        left: 5%
-        top: 35%
-        position: absolute
+        left: 10%
+        top: 3%
+        position: relative
         transition: all .5s ease
         &:hover
             z-index: 2
@@ -75,14 +76,21 @@
     .project-Slide-each-3
         width: 30vw
         border: 1px solid black
-        left: 10%
-        top: 51%
-        position: absolute
+        left: 20%
+        top: -20%
+        position: relative
         transition: all .5s ease
         &:hover
             z-index: 2
             transform: scale(1.5)
 .project-details
+    width: 50%
     display: flex
     flex-direction: column 
-    justify-content: space-around
+    font-family: Asap
+    .project-links
+        display: flex
+        flex-direction: row
+    .project-links-img
+        width: 10%
+        padding: 2%

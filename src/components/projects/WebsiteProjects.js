@@ -73,14 +73,20 @@ export default class WebsiteProjects extends React.Component {
                             <img className="project-Slide-each-3" src={this.state.projectDetails.img3}></img>
                         </div>
                         <div className="project-details" >
-                            <h4> What it is: </h4>
+                            <div className="project-links">
+                                <a href="">
+                                    <img src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" className="project-links-img"></img>
+                                </a>
+                                <a href="">
+                                    <img src="http://www.stickpng.com/assets/images/585e4daacb11b227491c339d.png" className="project-links-img"></img>
+                                </a>
+                            </div>
+                            <h5> What it is: </h5>
                             <p></p>
-                            <h4> What it does: </h4>
+                            <h5> What it does: </h5>
                             <p></p>
-                            <h4> How it is: </h4>
+                            <h5> How it is: </h5>
                             <p></p>
-                            <MuiThemeProvider><IconButton iconClassName="muidocs-icon-custom-github" /></MuiThemeProvider>
-
                         </div>
                     </div>
                 </div>
