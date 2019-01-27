@@ -31,9 +31,7 @@ render (){
                 <ul className="navigation_list">
                   { SideNavData.map((item, index) => { return (
                   <li key={index} className="navigation_item">
-                    <AnchorLink href={ item.href }>
-                      <a href={ item.href } className="navigation_link"> { item.title } </a>
-                    </AnchorLink>
+                      <AnchorLink href={ item.href } className="navigation_link"> { item.title } </AnchorLink>
                   </li>
                   ) }) }
                 </ul>
