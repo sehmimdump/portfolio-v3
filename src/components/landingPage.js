@@ -22,7 +22,7 @@ class LandingPage extends Component {
   componentDidMount(){
 
     // use the node ref to create the animation
-    this.myTween = TweenMax.from(this.myElement, 1, {height:0});
+    this.myTween = TweenMax.from(this.myElement, 1, {height:90});
 
   }
   render() {
@@ -30,7 +30,7 @@ class LandingPage extends Component {
     return (
       <div className="landingpage">
         {/* NAME */}
-          <div ref={div => this.myElement = div} >
+          <div className="header-div" ref={div => this.myElement = div} >
             <h1 className="header-main" >
               Sehmim Al
             </h1>
