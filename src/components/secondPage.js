@@ -31,7 +31,7 @@ export default class SecondPage extends Component {
         {/* CARD NAV */}
 
         <div className="card">
-            <a className="card_side card_side--front" href="#">
+            <a className="card_side card_side--front">
                 <h1 className="Header-main"> { this.state.title } </h1>
             </a>
             <div className="card_side card_side--back">
