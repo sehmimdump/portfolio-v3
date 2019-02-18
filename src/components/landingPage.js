@@ -6,7 +6,6 @@ import '../styles/media_Queries/tv.sass';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Hamburger from "./Hamburger";
-import { TweenMax, TimelineLite, Power2, Elastic, CSSPlugin } from "gsap/TweenMax";
 
 const socialData = [
   { title: 'linkedin' , href: 'https://www.linkedin.com/in/sehmim-haque/', src:'https://grytics.com/wp-content/uploads/2015/01/1414386638_linkedin_circle_color-512.png' },
@@ -19,18 +18,12 @@ class LandingPage extends Component {
     this.myElement = null;
     this.myTween = null;
   }
-  componentDidMount(){
-
-    // use the node ref to create the animation
-    this.myTween = TweenMax.from(this.myElement, 1, {height:90});
-
-  }
   render() {
 
     return (
       <div className="landingpage">
         {/* NAME */}
-          <div className="header-div" ref={div => this.myElement = div} >
+          <div className="header-div" >
             <h1 className="header-main" >
               Sehmim Al
             </h1>

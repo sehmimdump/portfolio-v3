@@ -1,6 +1,4 @@
 import React from 'react';
-import {IconButton} from 'material-ui/IconButton';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import CardDetails from "./websiteDATA";
 import "../../styles/websites.sass";
 import "../../styles/media_Queries/tv.sass";
